@@ -5,23 +5,11 @@ const cors = require('cors');
 const PORT = 5000;
 const app = express();
 
-// app.use(cors({
-//     origin: function (origin, callback) {
-//         console.log("Origin:", origin); // Add this
-//         if (origin === 'https://employee-system-record-frontend.vercel.app') {
-//             callback(null, true);
-//         } else {
-//             callback(new Error('Not allowed by CORS'));
-//         }
-//     },
-//     credentials: true,
-//     methods: ['GET', 'POST', 'PUT', 'DELETE']
-// }));
 
-const allowedOrigins = [
-    'https://employee-system-record-frontend.vercel.app',
-    'http://localhost:3000'
-];
+// const allowedOrigins = [
+//     'https://employee-system-render-frontend.onrender.com/',
+//     'http://localhost:3000'
+// ];
 
 // app.use(cors({
 //     origin: function (origin, callback) {
